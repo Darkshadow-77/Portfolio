@@ -1,2 +1,2 @@
 # Portfolio
-A presntation of myself and my project/skils 
+A presentation of myself and my project/skils 
