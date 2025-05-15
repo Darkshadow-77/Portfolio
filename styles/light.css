@@ -1,0 +1,13 @@
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navbar a {
+    color: #333;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+}
