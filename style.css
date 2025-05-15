@@ -11,6 +11,10 @@ body {
     justify-content: center;
 }
 
+.line{
+    width: 80%;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -47,14 +51,11 @@ body {
     border-radius: 5px;
 }
 
-.illustrations {
+main{
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 50px;
-}
-
-.illustrations img {
-    margin: 0 20px;
+    margin-inline: 20px;
 }
 
 .th-box {
@@ -72,6 +73,69 @@ body {
 }
 
 .giant-icon {
-    font-size: 300px;
+    font-size: 10em;
     position: relative;
 }
+/* Animation à l’ouverture */
+@keyframes rotateIn {
+  from {
+    transform: rotateY(360deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.fa-code {
+  display: inline-block;
+  animation: rotateIn 1s ease-out;
+  transition: transform 0.5s ease;
+}
+
+/* Rotation au survol */
+.fa-code:hover {
+  transform: rotate(360deg);
+}
+.ft-dec{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: 1fr 1fr 1fr;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   height: 100%;
+}
+
+.img-dec{
+    max-width: 180px;
+    border-radius: 30px;
+}
+
+#dec1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#dec2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#dec3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#dec4{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#dec5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#dec6{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+

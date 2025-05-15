@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+     background: linear-gradient(135deg, #f0f0f0, #ffffff);
     color: #333;
 }
 
@@ -10,4 +10,27 @@ body {
 .button {
     background-color: #333;
     color: white;
+}
+.fa-code:hover{
+    color: rgb(226, 50, 50);
+}
+
+.syntax-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Coloration style éditeur clair */
+.syntax-title .tag {
+  color: #d73a49; /* rouge rosé (balises) */
+}
+
+.syntax-title .element {
+  color: #005cc5; /* bleu profond (nom de balise) */
+}
+
+.syntax-title .text {
+  color: #22863a; /* vert foncé (contenu ou attributs) */
 }

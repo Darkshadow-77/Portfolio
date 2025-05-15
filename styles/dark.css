@@ -1,5 +1,5 @@
 body {
-    background-color: #2c2c3e;
+    background: radial-gradient(circle at top left, #1a1a1a, #0d0d0d);
     color: white;
 }
 
@@ -11,3 +11,28 @@ body {
     background-color: white;
     color: #2c2c3e;
 }
+
+.fa-code:hover{
+    color: rgb(45, 70, 216);
+}
+
+.syntax-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Style éditeur type VS Code / Monokai */
+.syntax-title .tag {
+  color: #c792ea; /* violet */
+}
+
+.syntax-title .element {
+  color: #82aaff; /* bleu clair */
+}
+
+.syntax-title .text {
+  color: #c3e88d; /* vert clair */
+}
+
