@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Vérifier si une préférence existe dans le stockage local
     const currentTheme = localStorage.getItem("theme") || "light";
-    themeStyle.setAttribute("href", `styles/${currentTheme}.css`);
+    themeStyle.setAttribute("href", `../styles/${currentTheme}.css`);
     localStorage.setItem("theme",currentTheme);
 
     toggleButton.addEventListener("click", () => {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             themeIcon.classList.remove("fa-sun");
             themeIcon.classList.add("fa-moon");
         }
-        themeStyle.setAttribute("href", `styles/${newTheme}.css`);
+        themeStyle.setAttribute("href", `../styles/${newTheme}.css`);
         localStorage.setItem("theme", newTheme); // Sauvegarde la préférence
     });
 });
