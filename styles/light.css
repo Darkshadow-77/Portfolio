@@ -38,3 +38,12 @@ body {
 .social-icons a{
     color: inherit;
 }
+
+/*contact page*/
+.contact-info a {
+  color:#005fa3;
+}
+
+.contact-form button {
+  background-color: #005fa3;
+}
