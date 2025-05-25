@@ -34,3 +34,7 @@ body {
 .syntax-title .text {
   color: #22863a; /* vert foncé (contenu ou attributs) */
 }
+
+.social-icons a{
+    color: inherit;
+}

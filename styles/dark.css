@@ -36,3 +36,6 @@ body {
   color: #c3e88d; /* vert clair */
 }
 
+.social-icons a{
+    color: inherit;
+}
