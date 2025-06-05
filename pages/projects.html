@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John Doe</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/light.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../scripts/script0.js" defer></script>
+    <script src="../scripts/script2.js" defer></script>
+    
+</head>
+<body>
+    <header class="head">
+        <div class="navbar">
+            <a href="../index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="th-box">
+            <p>Theme:</p>
+        <button id="th-toggle"><i class="fa-solid fa-moon th-icon"></i></button>
+        </div>
+    </header>
+    <hr class="line">
+    <main class="prj-main">
+        <section class="prj-box" id="prj0">
+            <div class="hidder">
+                <img class="prj-prev" src="../img/Projects/20250516_1640_Maquette Application Mobile_remix_01jvczdmgyf15tq352qs6nb2nj_1.png">
+                <button class="shower" data-gallery="app1"><i class="fa-solid fa-up-right-from-square"></i></button>
+            </div>
+            <div class="prj-pres">
+                <h2>Nettrash</h2>
+                <p>
+                    Application mobile locale connectée à une poubelle intelligente via capteurs IoT. Elle permet de suivre le niveau de remplissage, recevoir des alertes en temps réel, et optimiser la collecte. Interface claire avec affichage des données en temps réel, historique des vidages et notifications configurables.
+                </p>
+            </div>
+        </section>
+        
+        
+        <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="slides-container"></div>
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+    </main>
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://github.com/tonpseudo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/tonpseudo" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/tonpseudo" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/tonpseudo" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+        <p>&copy; 2025 MonPortfolio. Tous droits réservés.</p>
+    </div>
+  </footer>    
+</body>
+</html>

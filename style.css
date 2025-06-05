@@ -259,10 +259,32 @@ main{
   gap: 0.5rem;
 }
 
+/*Projects page*/
 
+.prj-box{
+    height: 350px;
+    display: flex;
+    max-width: 95%;
+    justify-content: space-between;
+}
 
+.hidder{
+    width:100%;
+    overflow-x: hidden;
+}
 
+.prj-prev{
+    height: 100%;
+    max-height: 100%;
+}
 
+.shower{
+    position:absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    left:0px;
+}
 
 
 
