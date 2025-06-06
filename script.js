@@ -21,3 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", newTheme); // Sauvegarde la préférence
     });
 });
+

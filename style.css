@@ -261,7 +261,14 @@ main{
 
 /*Projects page*/
 
+.prj-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .prj-box{
+    position: relative;
     height: 350px;
     display: flex;
     max-width: 95%;
@@ -284,6 +291,71 @@ main{
     outline: none;
     background-color: transparent;
     left:0px;
+    bottom: 0px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100vw;
+  height: 100%;  
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;  
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 80%;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  display: block;  
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 20px; 
+  border: 1px solid white;  
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
 }
 
 
