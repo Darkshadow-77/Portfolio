@@ -1,5 +1,4 @@
 
-    // Optionnel : feedback après envoi avec JS
     const form = document.getElementById('contactForm');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();

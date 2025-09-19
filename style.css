@@ -269,15 +269,41 @@ main{
 
 .prj-box{
     position: relative;
-    height: 350px;
-    display: flex;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     max-width: 95%;
     justify-content: space-between;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .hidder{
     width:100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.hover-hint {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: .9rem;
+  padding: .5rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  border-radius: 0 0 8px 8px;
+  height: 30px;
+}
+
+.hidder:hover .hover-hint {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .prj-prev{
@@ -285,14 +311,80 @@ main{
     max-height: 100%;
 }
 
+.prj-pres{
+  border-left: 1px solid ;   
+  padding: 10px;
+}
+
+.des-ctn{
+  font-size: large;
+}
+
+.prj-pres .syntax-title{
+  font-size: 1.5rem;
+}
+
+.tool-box{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.prj-meta {
+  margin-top: 1rem;
+  padding: .8rem;
+  border-radius: 8px;
+}
+
+.tools {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: .6rem;
+}
+
+.tools li {
+  padding: .3rem .6rem;
+  border-radius: 6px;
+  font-size: .9rem;
+}
+
+
+.prj-visual .viz-box {
+  margin-top: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.viz-box img{
+  max-width: 100%;
+}
+
+.prj-visual img {
+  width: 100%;
+  display: block;
+}
+
 .shower{
     position:absolute;
     border: none;
     outline: none;
     background-color: transparent;
-    left:0px;
-    bottom: 0px;
+    left:5px;
+    bottom: 5px;
+    font-size: 30px;
+    transition: font-size 500ms ease;
+    z-index: 2;
+    color: white;
 }
+
+.shower:hover{
+  cursor: pointer;
+  font-size: 35px;
+}
+
 
 .modal {
   display: none;
@@ -358,7 +450,12 @@ main{
   cursor: pointer;
 }
 
-
+.footer{
+  height: fit-content;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid;
+}
 
 
 

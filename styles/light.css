@@ -39,6 +39,25 @@ body {
     color: inherit;
 }
 
+/*projects page*/
+
+.prj-box{
+  box-shadow: #333 1.5px 2px 0px 0px;
+  border: 1px solid #1a1a1a;
+}
+
+.prj-pres{
+  border-color: #333; 
+}
+
+.prj-meta{
+  background: rgba(0,0,0,0.04);
+}
+
+.tool li{
+  background: #eee;
+}
+
 /*contact page*/
 .contact-info a {
   color:#005fa3;

@@ -39,6 +39,24 @@ body {
 .social-icons a{
     color: inherit;
 }
+/*projects page*/
+
+.prj-box{
+  box-shadow: #f0f0f0 1.5px 2px 0px 0px;
+  border: 1px solid #f0f0f0;
+}
+
+.prj-pres{
+  border-color: #f0f0f0;  
+}
+
+.prj-meta{
+  background: rgba(255,255,255,0.05);
+}
+
+.tool li{
+  background: #1f1f1f;
+}
 
 /*contact page*/
 .contact-info a {
@@ -46,5 +64,5 @@ body {
 }
 
 .contact-form button {
-  background-color: #c3e88d;
+  background-color: #a3e73d;
 }
